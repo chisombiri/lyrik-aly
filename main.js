@@ -86,7 +86,5 @@ result.addEventListener('click', e => {
         const songTitle = clickedEl.getAttribute('data-songtitle');
 
         getLyrics(artist, songTitle);
-    } else {
-        
-    }
+    } 
 });
