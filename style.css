@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+header{
+    position: relative;
+    background:url('imgs/music-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 0;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header * {
+    z-index: 1; 
+}
+
+header h1{
+    margin: 0 0 32px;
+}
+
+button {
+    background-color: #FF4642;
+    color: #ffffff;
+    border-radius: 32px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: 0;
+}
+
+button:active{
+    transform: scale(0.96);
+}
+
+button:focus, input:focus{
+    outline: none;
+}
+
+form{
+    position: relative;
+    width: 480px;
+    max-width: 100%;
+}
+
+form input{
+    border: 0;
+    border-radius: 48px;
+    font-size: 1rem;
+    padding: 16px 24px;
+    width: 100%;
+    color: #bb0032;
+}
+
+form button{
+    background-color: #FF2962;
+    border: 0;
+    border-radius: 48px;
+    padding: 14px 24px;
+    font-size: 1rem;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+ul.songs{
+    list-style: none;
+    padding: 0;
+}
+
+ul.songs li{
+    display: flex;
+    margin: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    margin: 32px auto;
+    width: 480px;
+    max-width: 100%;
+}
+
+.container h2{
+    font-weight: 300;
+}
+
+.container p{
+    text-align: center;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+.centered button{
+    transform: scale(1.3);
+    margin: 16px;
+}
